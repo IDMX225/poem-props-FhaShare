@@ -1,6 +1,6 @@
 /* typography */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Signika:wght@300..700&display=swap');
 
 $font: "Poppins", serif;
 
@@ -14,3 +14,49 @@ $display-font: $font;
 $display-weight: 900;
 $display-spacing: 0.15em;
 $display-title-size: 4rem;
+
+body {
+    font-family: "Signika", sans-serif;
+    line-height: 1.8;
+    color: #6c251c;
+}
+
+h1, h2 {
+    font-family: "Fleur De Leah", cursive;
+    color: #6c251c;
+    text-align: center;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+    margin-top: 20px;
+}
+  
+h2 {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: "Signika", sans-serif;
+    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.5rem);
+    line-height: 1.8;
+    color: #6c251c;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px;
+    font-size: 0.8rem;
+  }
+  
+footer a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+  
