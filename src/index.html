@@ -6,7 +6,7 @@
     <meta name="description" content="A modern CSS page">
     <meta name="generator" content="Eleventy v1.2" />
     <title>The Pumpkin By John Greenleaf Whittier</title>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
     <!-- the props -->
     <link rel="stylesheet" href="https://unpkg.com/open-props"/>
     <!-- optional imports that use the props -->
@@ -14,56 +14,79 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-  <h1>The Pumpkin</h1>
-  <h2>A Poem By John Greenleaf Whittier</h2>
-  <p>Oh, greenly and fair in the lands of the sun,
-    The vines of the gourd and the rich melon run,
-    And the rock and the tree and the cottage enfold,
-    With broad leaves all greenness and blossoms all gold,
-    Like that which o'er Nineveh's prophet once grew,
-    While he waited to know that his warning was true,
-    And longed for the storm-cloud, and listened in vain
-    For the rush of the whirlwind and red fire-rain.
+    <header class="hero">
+      <h1 class="hero__title">The Pumpkin</h1>
+      <figure class="hero-figure">
+        <img class="hero-figure__img" width="900" height="1355" src="./images/aaron-burden-pumkin-unsplash.jpg" alt="The pumpkins">
+      </figure>
+    </header>
+  <main>
+    <article class="poem">
+      <h2 class="poem__subtitle">
+        <span>A Poem by&nbsp;</span><span>John Greenleaf Whittier</span>
+      </h2>
+      <p class="poem__stanza">
+        Oh, greenly and fair in the lands of the sun,<br>
+        The vines of the gourd and the rich melon run,<br>
+        And the rock and the tree and the cottage enfold,<br>
+        With broad leaves all greenness and blossoms all gold,<br>
+        Like that which o'er Nineveh's prophet once grew,<br>
+        While he waited to know that his warning was true,<br>
+        And longed for the storm-cloud, and listened in vain<br>
+        For the rush of the whirlwind and red fire-rain.
+      </p>
+      <hr class="poem__rule">
+      <p class="poem__stanza">
+        On the banks of the Xenil the dark Spanish maiden<br>
+        Comes up with the fruit of the tangled vine laden;<br>
+        And the Creole of Cuba laughs out to behold<br>
+        Through orange-leaves shining the broad spheres of gold;<br>
+        Yet with dearer delight from his home in the North,<br>
+        On the fields of his harvest the Yankee looks forth,<br>
+        Where crook-necks are coiling and yellow fruit shines,<br>
+        And the sun of September melts down on his vines.
+      </p>
+      <hr class="poem__rule">
+      <p class="poem__stanza">
+        Ah! on Thanksgiving day, when from East and from West,<br>
+        From North and from South comes the pilgrim and guest;<br>
+        When the gray-haired New Englander sees round his board<br>
+        The old broken links of affection restored;<br>
+        When the care-wearied man seeks his mother once more,<br>
+        And the worn matron smiles where the girl smiled before;<br>
+        What moistens the lip and what brightens the eye,<br>
+        What calls back the past, like the rich Pumpkin pie?
+      </p>
+      <hr class="poem__rule">
+      <p class="poem__stanza">
+        Oh, fruit loved of boyhood! the old days recalling,<br>
+        When wood-grapes were purpling and brown nuts were falling!<br>
+        When wild, ugly faces we carved in its skin,<br>
+        Glaring out through the dark with a candle within!<br>
+        When we laughed round the corn-heap, with hearts all in tune,<br>
+        Our chair a broad pumpkin, our lantern the moon,<br>
+        Telling tales of the fairy who travelled like steam<br>
+        In a pumpkin-shell coach, with two rats for her team!
+      </p>
+      <hr class="poem__rule">
+      <p class="poem__stanza">
+        Then thanks for thy present! none sweeter or better<br>
+        E'er smoked from an oven or circled a platter!<br>
+        Fairer hands never wrought at a pastry more fine,<br>
+        Brighter eyes never watched o'er its baking, than thine!<br>
+        And the prayer, which my mouth is too full to express,<br>
+        Swells my heart that thy shadow may never be less,<br>
+        That the days of thy lot may be lengthened below,<br>
+        And the fame of thy worth like a pumpkin-vine grow,<br>
+        And thy life be as sweet, and its last sunset sky<br>
+        Golden-tinted and fair as thy own Pumpkin pie.
+      </p>
+      <hr class="poem__rule">
+    </article>
 
-    On the banks of the Xenil the dark Spanish maiden
-    Comes up with the fruit of the tangled vine laden;
-    And the Creole of Cuba laughs out to behold
-    Through orange-leaves shining the broad spheres of gold;
-    Yet with dearer delight from his home in the North,
-    On the fields of his harvest the Yankee looks forth,
-    Where crook-necks are coiling and yellow fruit shines,
-    And the sun of September melts down on his vines.
-
-    Ah! on Thanksgiving day, when from East and from West,
-    From North and from South comes the pilgrim and guest;
-    When the gray-haired New Englander sees round his board
-    The old broken links of affection restored;
-    When the care-wearied man seeks his mother once more,
-    And the worn matron smiles where the girl smiled before;
-    What moistens the lip and what brightens the eye,
-    What calls back the past, like the rich Pumpkin pie?
-
-    Oh, fruit loved of boyhood! the old days recalling,
-    When wood-grapes were purpling and brown nuts were falling!
-    When wild, ugly faces we carved in its skin,
-    Glaring out through the dark with a candle within!
-    When we laughed round the corn-heap, with hearts all in tune,
-    Our chair a broad pumpkin, our lantern the moon,
-    Telling tales of the fairy who travelled like steam
-    In a pumpkin-shell coach, with two rats for her team!
-
-    Then thanks for thy present! none sweeter or better
-    E'er smoked from an oven or circled a platter!
-    Fairer hands never wrought at a pastry more fine,
-    Brighter eyes never watched o'er its baking, than thine!
-    And the prayer, which my mouth is too full to express,
-    Swells my heart that thy shadow may never be less,
-    That the days of thy lot may be lengthened below,
-    And the fame of thy worth like a pumpkin-vine grow,
-    And thy life be as sweet, and its last sunset sky
-    Golden-tinted and fair as thy own Pumpkin pie</p>
+  </main>
   <footer class="footer">
-    <p class="copyright">&copy; 2022
+    <p class="copyright">&copy; 2024
       <a href="https://www.instagram.com/fha.share_snaps/">Fhaungfha Suvannakajorn</a>
     </p>
     <p class="credits">Photo by
