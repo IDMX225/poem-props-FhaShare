@@ -1,18 +1,46 @@
-/* variables */
+// _variables.scss
 
 @use "./functions" as func;
 
-$bg-color: gold;
+// Font Variables
+$font-body: "Signika", sans-serif;
+$font-display: "Fleur De Leah", cursive;
+
+// Typography Variables
+$body-font-size: 115%;
+$body-font-weight: 350;
+$body-italic-weight: 100;
+$display-weight: 900;
+$display-spacing: 0.25rem;
+$display-title-size: 4rem;
+$line-height-body: 1.8;
+$line-height-heading: 1.2;
+
+// Color Variables
+$bg-color: rgba(255, 245, 221, 0.229);
 $bg-very-light: func.tint($bg-color, 50%);
 $bg-light: func.tint($bg-color, 25%);
 $bg-medium: $bg-color;
 $bg-dark: func.shade($bg-color, 25%);
 $bg-very-dark: func.shade($bg-color, 50%);
 
-
-$primary-color: rebeccapurple;
+$primary-color: rgb(78, 31, 0);
 $primary-very-light: func.tint($primary-color, 50%);
 $primary-light: func.tint($primary-color, 25%);
 $primary-medium: $primary-color;
 $primary-dark: func.shade($primary-color, 25%);
 $primary-very-dark: func.shade($primary-color, 50%);
+
+$accent-color: #e25822;
+
+// Background and border-radius
+$background-color-light: #fef9e7;
+$background-color-dark: #000;
+$border-radius-small: 4px;
+$border-radius-medium: 8px;
+$border-radius-large: 16px;
+
+// Gray Scale Colors
+$gray-1: #f5f5f5;
+$gray-2: #e0e0e0;
+$gray-3: #bdbdbd;

@@ -25,3 +25,8 @@
   display: flex;
   justify-content: center;
 }
+
+@mixin simple-grid($gap: 1rem) {
+  display: grid;
+  grid-gap: $gap;
+}

@@ -1,0 +1,53 @@
+// _article.scss
+@use "../abstracts/mixins" as mixins;
+@use "../abstracts/variables" as vars;
+
+.poem {
+  @include mixins.simple-grid(2rem);
+  margin-inline: auto;
+  font-family: vars.$font-body;
+  font-size: vars.$body-font-size;
+
+  &__subtitle {
+    font-variant: small-caps;
+    font-size: 2rem;
+    text-align: center;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    > * {
+      display: block;
+      width: max-content;
+    }
+  }
+
+  &__stanza {
+    font-size: calc(vars.$body-font-size * 0.75);
+    font-family: vars.$font-body;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+
+  &__rule {
+    --step-5: clamp(0.16rem, calc(-0.01rem + 0.81vw), 0.57rem);
+    margin-block: var(--step-5);
+    border: 0;
+    border: var(--step-5) solid vars.$gray-3;
+    border-radius: 50%;
+    background-color: vars.$gray-3;
+    width:100%;
+    margin-inline: auto;
+  }
+
+  &__stanza:first-letter {
+    font-family: vars.$font-display;
+    font-size: clamp(1rem, 2vw + 1rem, 2.2rem);
+    color: vars.$accent-color;
+    font-weight: bold;
+    float: left;
+    margin-right: 0.2em;
+    line-height: 1;
+  }
+}
