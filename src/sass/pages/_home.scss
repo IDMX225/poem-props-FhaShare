@@ -16,3 +16,132 @@
 // }
 
 /* Begin My CSS */
+/* General Styles */
+body {
+  font-family: 'Signika', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fef9e7; /* Light yellow background */
+}
+
+h1, h2 {
+  font-family: 'Fleur De Leah', cursive;
+  color: #6c251c; /* Fall-inspired deep brown */
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw + 1rem, 4rem);
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: 'Signika', sans-serif;
+  font-size: clamp(1rem, 1.5vw + 0.5rem, 1.5rem);
+  line-height: 1.8;
+  color: #4a2e1b; /* Dark brown text */
+  margin: 20px 40px;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+figcaption {
+  font-size: 1rem;
+  text-align: center;
+  background-color: #6c251c; /* Deep brown background */
+  color: #fff;
+  padding: 10px 0;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+
+footer a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Dropcaps */
+.poem-text p::first-letter {
+  font-size: clamp(2.5rem, 3vw + 1rem, 3.5rem);
+  color: #e25822; /* Pumpkin orange for drop cap */
+  font-weight: bold;
+}
+
+/* Media Queries */
+
+/* Large screens */
+@media screen and (min-width: 1400px) {
+  .poem-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 100px;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablet screens */
+@media screen and (min-width: 768px) and (max-width: 1399px) {
+  .poem-container {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+  }
+
+  figcaption {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    margin: 10px 20px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
