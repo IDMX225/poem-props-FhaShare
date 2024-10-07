@@ -21,13 +21,12 @@ body {
   font-family: 'Signika', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fef9e7; /* Light yellow background */
+  background-color: #fef9e7;
 }
 
 h1, h2 {
   font-family: 'Fleur De Leah', cursive;
-  color: #6c251c; /* Fall-inspired deep brown */
-}
+  color: #6c251c;
 
 h1 {
   font-size: clamp(2rem, 3vw + 1rem, 4rem);
@@ -45,7 +44,7 @@ p {
   font-family: 'Signika', sans-serif;
   font-size: clamp(1rem, 1.5vw + 0.5rem, 1.5rem);
   line-height: 1.8;
-  color: #4a2e1b; /* Dark brown text */
+  color: #4a2e1b;
   margin: 20px 40px;
 }
 
@@ -66,7 +65,7 @@ figure {
 figcaption {
   font-size: 1rem;
   text-align: center;
-  background-color: #6c251c; /* Deep brown background */
+  background-color: #6c251c;
   color: #fff;
   padding: 10px 0;
 }
@@ -92,11 +91,9 @@ footer a:hover {
 /* Dropcaps */
 .poem-text p::first-letter {
   font-size: clamp(2.5rem, 3vw + 1rem, 3.5rem);
-  color: #e25822; /* Pumpkin orange for drop cap */
+  color: #e25822;
   font-weight: bold;
 }
-
-/* Media Queries */
 
 /* Large screens */
 @media screen and (min-width: 1400px) {
